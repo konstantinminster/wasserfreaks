@@ -3,10 +3,12 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://wasserfreaksblog.gatsbyjs.io/",
     title: "Wasserfreaks",
   },
   plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-contentful",
       options: {
