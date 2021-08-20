@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -7,8 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "CfBl5kZnfnSugnKDK5aYDzLTcRY0Q9iL78WiyfAun4E",
-        spaceId: "kekrbjh8y2yu",
+        accessToken: "process.env.CONTENTFUL_API_TOKEN",
+        spaceId: "process.env.CONTENTFUL_SPACE_ID",
       },
     },
     "gatsby-plugin-styled-components",
